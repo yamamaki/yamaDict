@@ -5,5 +5,6 @@ $(document).ready(function() {
 
 function lookUp(word) {
 	url = "http://www.iciba.com/"+word+" #dict_content_1";
-	$("body").load(url);
+	$("#result").load(url);
+	$("#header").html("<h4>"+word+"<h4>");
 }
