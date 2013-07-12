@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 function lookUp(word) {
-	url = "http://www.iciba.com/"+word+" #dict_content_1";
-	$("#result").load(url);
+	url = "http://www.iciba.com/"+word;
 	$("#header").html("<h4>"+word+"<h4>");
+	$("#result").load(url+'. group_pos');
 }
